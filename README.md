@@ -1,1 +1,1 @@
-charts/netdata/README.md
+/charts/khulnasoft/README.md
