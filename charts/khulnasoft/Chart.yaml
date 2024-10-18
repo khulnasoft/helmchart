@@ -15,4 +15,4 @@ maintainers:
   - name: Khulnasoft Cloud SRE team
     email: cloud-sre@khulnasoft.cloud
 icon: https://khulnasoft.github.io/helmchart/logo.png
-appVersion: v1.47.4
+appVersion: 3.7.107
