@@ -27,7 +27,7 @@ jobs:
       - name: Configure Git
         run: |
           git config --global user.name Khulnasoftbot
-          git config --global user.email bot@khulnasoft.cloud
+          git config --global user.email bot@cloud.khulnasoft.com
 
       - name: Get current version
         id: get_current_var

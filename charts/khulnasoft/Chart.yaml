@@ -7,12 +7,12 @@ keywords:
   - alerting
   - metric
   - monitoring
-home: https://khulnasoft.cloud/
+home: https://cloud.khulnasoft.com/
 sources:
   - https://github.com/khulnasoft/helmchart
   - https://github.com/khulnasoft/khulnasoft
 maintainers:
   - name: Khulnasoft Cloud SRE team
-    email: cloud-sre@khulnasoft.cloud
+    email: cloud-sre@cloud.khulnasoft.com
 icon: https://khulnasoft.github.io/helmchart/logo.png
 appVersion: agent-3.7.107

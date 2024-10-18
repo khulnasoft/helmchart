@@ -330,7 +330,7 @@ data for specific PV is lost in case of pod removal.
 
 1. database (`/var/cache/khulnasoft`) - all metrics data is stored here. Performance of this volume affects query timings.
 2. alarms (`/var/lib/khulnasoft`) - alarm log, if not persistent pod recreation will result in parent appearing as a new
-   node in `khulnasoft.cloud` (due to `./registry/` and `./cloud.d/` being removed).
+   node in `cloud.khulnasoft.com` (due to `./registry/` and `./cloud.d/` being removed).
 
 In case of `child` instance it is a bit simpler. By default, hostPath: `/var/lib/khulnasoft-k8s-child` is mounted on child
 in: `/var/lib/khulnasoft`. You can disable it but this option is pretty much required in a real life scenario, as without
@@ -443,4 +443,4 @@ If you want to contribute, we are humbled!
 - Take a look at our [Contributing Guidelines](https://github.com/khulnasoft/.github/blob/main/CONTRIBUTING.md).
 - This repository is under the [Khulnasoft Code Of Conduct](https://github.com/khulnasoft/.github/blob/main/CODE_OF_CONDUCT.md).
 - Chat about your contribution and let us help you in
-  our [forum](https://community.khulnasoft.cloud/c/agent-development/9)!
+  our [forum](https://community.cloud.khulnasoft.com/c/agent-development/9)!

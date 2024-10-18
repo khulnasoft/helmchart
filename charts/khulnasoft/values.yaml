@@ -229,7 +229,7 @@ parent:
     enabled: false
     token: ""
     rooms: ""
-    url: "https://api.khulnasoft.cloud"
+    url: "https://api.cloud.khulnasoft.com"
 
   extraVolumeMounts: []
 
@@ -363,7 +363,7 @@ child:
     enabled: false
     token: ""
     rooms: ""
-    url: "https://api.khulnasoft.cloud"
+    url: "https://api.cloud.khulnasoft.com"
 
   extraVolumeMounts: []
     ## Additional volume mounts for khulnasoft child
@@ -506,7 +506,7 @@ k8sState:
     enabled: false
     token: ""
     rooms: ""
-    url: "https://api.khulnasoft.cloud"
+    url: "https://api.cloud.khulnasoft.com"
 
   extraVolumeMounts: []
 
