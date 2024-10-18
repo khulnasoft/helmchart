@@ -1,0 +1,18 @@
+apiVersion: v2
+name: khulnasoft
+version: 3.7.107
+description: Real-time performance monitoring, done right!
+type: application
+keywords:
+  - alerting
+  - metric
+  - monitoring
+home: https://khulnasoft.cloud/
+sources:
+  - https://github.com/khulnasoft/helmchart
+  - https://github.com/khulnasoft/khulnasoft
+maintainers:
+  - name: Khulnasoft Cloud SRE team
+    email: cloud-sre@khulnasoft.cloud
+icon: https://khulnasoft.github.io/helmchart/logo.png
+appVersion: v1.47.4

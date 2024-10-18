@@ -1,0 +1,26 @@
+{{- if and .Values.serviceAccount.create (include "khulnasoft.restarter.enabled" .) }}
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: Role
+metadata:
+  name: {{ template "khulnasoft.fullname" . }}-restarter
+  namespace: {{ .Release.Namespace }}
+  labels:
+    app: {{ template "khulnasoft.name" . }}
+    chart: {{ template "khulnasoft.chart" . }}
+    release: {{ .Release.Name }}
+    heritage: {{ .Release.Service }}
+rules:
+  - apiGroups:
+      - "apps"
+    resources:
+      - "deployments"
+      - "daemonsets"
+    resourceNames:
+      - {{ template "khulnasoft.name" . }}-parent
+      - {{ template "khulnasoft.name" . }}-child
+      - {{ template "khulnasoft.name" . }}-k8s-state
+    verbs:
+      - "get"
+      - "patch"
+{{- end -}}

@@ -1,1 +1,1 @@
-# helmchart
+charts/netdata/README.md
